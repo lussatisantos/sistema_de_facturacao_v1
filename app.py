@@ -1,3 +1,5 @@
+from time import sleep
+
 print ('-=' * 20)
 print('SISTEMA DE FACTURACAO VERSAO 1.0')
 print ('-=' * 20)
@@ -19,7 +21,13 @@ while opcao != 5:
     print ('-=' * 20)
 
     if opcao == 1:
-        produto = str(input('Digite o produto: '))
+        nome = str('Nome do cliente: ').strip()
+        produto = str(input('Digite o produto: ')).strip()
         preco = float(input('Digite o preco: '))
+
+        desc = str(input('Esse produto tem desconto? [S/N] : ')).strip().upper()
+        if desc in 'S':
+            desconto = float(input('Digite o desconto: '))
+        print('Emitindo a factura...')
+        sleep(3)
         
-        promocao = str(input(''))
