@@ -21,13 +21,25 @@ while opcao != 5:
     print ('-=' * 20)
 
     if opcao == 1:
-        nome = str('Nome do cliente: ').strip()
+        nome = str(input('Nome do cliente: ')).strip()
         produto = str(input('Digite o produto: ')).strip()
         preco = float(input('Digite o preco: '))
 
         desc = str(input('Esse produto tem desconto? [S/N] : ')).strip().upper()
         if desc in 'S':
             desconto = float(input('Digite o desconto: '))
+        else:
+            desconto = 0
         print('Emitindo a factura...')
         sleep(3)
-        
+        print ('-=' * 20)
+        print('SISTEMA DE FACTURACAO VERSAO 1.0')
+        print ('-=' * 20)
+        print('Nome: {} '.format(nome))
+        print('Produto: {}' .format(produto))
+        print('Desconto: {}' .format(desconto))
+        print('Total a pagar: {} Kz' .format((preco - desconto) + (preco * 0.14)))
+        print('Acrescentando IVA de 14%')
+        print('-=' * 20)
+        print('OBRIGADO PELA PREFERENCIA')
+        print('-=' * 20)
