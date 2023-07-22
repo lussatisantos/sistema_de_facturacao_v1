@@ -20,6 +20,9 @@ Para instalar precisas:
 
          2. Instale python com o comando => sudo apt install python3
 
+   Versao descontinuada, elaborada numa epoca de aprendizado da linguagem!
+   sistema_de_factura_v2 a caminho com sintaxe melhorada apos estudo sucessivos da linguagem Python, sendo tambem elaborada numa fase de aprendizado.
+
          3. Instale git com o comando => sudo apt install git
          
          4. No terminal digite => git clone https://github.com/lussatisantos/sistema_de_facturacao_v1
